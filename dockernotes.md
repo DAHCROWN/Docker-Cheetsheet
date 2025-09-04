@@ -22,12 +22,14 @@
 - `docker ps -a` lists all the containers including closed sessions
 - `docker logs <container-id>`
 - `docker stop <container>`
+- `docker kill <container>`
 - `docker start <container>`
 - `docker rm <container>`
 
 ## Building Images
 
 - `docker build -t <name> .`
+- `docker build -t <name>:<tag> .`
 
 ## Networks & Volumes
 
@@ -59,4 +61,12 @@ _Write your definition here._
 - `FROM`
 - `COPY`
 - `RUN`
+- `EXPOSE`
 - `WORKDIR`
+- `CMD` for the main and last command
+- `LABEL` adds metadata e.g LABEL description='', LABEL version="1.0"
+
+## FILES NAMES
+
+Dockerfile
+.dockerignore
